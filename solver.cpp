@@ -152,12 +152,9 @@ Proof Solver::FindProof(){
 
         double  mcycles_d = (double)(stop_cycles - start_collisions) / (1UL << 20);
 
-
-        uint32_t memorySpentKBytes = (tupleList.size() * LIST_LENGTH * input.k * sizeof(Integer)) / (1UL << 10);
-
         if(input.verbose) {
-            printf("\tChecked nonce %d:\n\t\tused %d KiB\n\t\tspent %2.2f Mcycles\n",
-                   (nonce + shift) % MAX_NONCE, memorySpentKBytes, mcycles_d);
+            printf("\tChecked nonce %d:\n\t\tspent %2.2f Mcycles\n",
+                   (nonce + shift) % MAX_NONCE, mcycles_d);
         }
 
         // Перевірка на дублі

@@ -6,7 +6,6 @@
 #include <cstdlib>
 
 
-const int tupleStructMultiplyer = 8;
 using namespace _POW;
 
 int32_t Input::calculateMemoryKB() {
@@ -25,7 +24,7 @@ void Input::printToConsole() {
         }
     }
     printf("]\n");
-    printf("\tRequired memory: %fMB\n", calculateMemoryKB() / 1024.);
+    printf("\tRequired memory: %.2fMB\n", calculateMemoryKB() / 1024.);
 }
 
 void Input::makeInputArray(Integer *input) {

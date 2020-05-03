@@ -12,6 +12,7 @@ namespace _POW {
     const int MAX_K_BYTES = 5; // Максимальна довжина k в байтах
     const int MAX_SEED_BYTES = 63; // Максимальна довжина seed в байтах
     const int SEED_LENGTH=4; // Довжина seed (кількість елементів);
+    const int tupleStructMultiplyer = 8;
 
     // визначення типів Nonce та In teger
     typedef uint32_t Nonce;
